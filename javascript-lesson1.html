@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style1.css">
+        <title></title>
+		<style></style>
+	</head>
+<body>
+<input id="num1"></input>
++
+<input id="num2"></input>
+=
+<input id="result" readonly></input>
+
+<button onclick="doMaths()">Press me</button>
+
+</body>
+</html>
+
+<script>
+function doMaths(){
+	var number1 = Number(document.getElementById("num1").value);
+	console.log(number1);
+	var number2 = Number(document.getElementById("num2").value);
+	//var sum = number1 + number2;
+	//console.log(sum);
+	//document.getElementById("result").value = sum;
+	document.getElementById("result").value = number1 + number2;
+};
+
+
+
+//alert("Hello \n Piotr");
+//console.log("Hello");
+
+
+</script>

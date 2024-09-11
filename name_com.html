@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style1.css">
+        <title></title>
+		<style></style>
+	</head>
+<body>
+First name:
+<input id="fname"></input>
+Surname:
+<input id="sname"></input>
+Age:
+<input id="age"></input>
+
+<button onclick="showCom()">Press me</button>
+
+</body>
+</html>
+
+<script>
+function showCom(){
+	let firstname = document.getElementById("fname").value;
+	let surname = document.getElementById("sname").value;
+	let my_age = document.getElementById("age").value;
+	//var message = 'Hello ${firstname} ${surname} You are ${my_age} years old');
+	let message = 'Hello ${firstname}';
+	console.log('Hello '+ firstname +' '+surname+'\nYou are '+my_age+' years old');
+	//alert('Hello '+ firstname +' '+surname+'\nYou are '+my_age+' years old');
+	alert(message);
+	//console.log(surname);
+};
+
+
+
+//alert("Hello \n Piotr");
+//console.log("Hello");
+
+
+</script>
